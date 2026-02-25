@@ -29,9 +29,6 @@ export default function Navbar() {
                     </div>
 
                     <div className="hidden md:flex items-center space-x-4">
-                        <Link href="/login" className="text-sm font-medium text-white/90 hover:text-white transition-colors duration-200 drop-shadow-md">
-                            Sign In
-                        </Link>
                         <Link href="/register" className="btn-primary py-2.5 px-6 text-sm flex items-center gap-2">
                             <User className="w-4 h-4" />
                             <span>Join Network</span>
@@ -66,9 +63,6 @@ export default function Navbar() {
                             Gallery
                         </Link>
                         <div className="h-px bg-white/10 my-2 mx-4"></div>
-                        <Link href="/login" onClick={() => setIsMobileMenuOpen(false)} className="text-white/90 font-medium py-2 px-4 hover:bg-white/5 rounded-lg transition-colors">
-                            Sign In
-                        </Link>
                         <Link href="/register" onClick={() => setIsMobileMenuOpen(false)} className="btn-primary py-3 px-4 flex items-center justify-center gap-2 mt-2">
                             <User className="w-4 h-4" />
                             <span>Join Network</span>
