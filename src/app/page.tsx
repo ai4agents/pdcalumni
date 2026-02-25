@@ -97,9 +97,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative isolate group cursor-pointer">
-              <div className="aspect-[4/5] md:aspect-square rounded-[2rem] overflow-hidden relative bg-[#0a0a0a] shadow-2xl transition-transform duration-700 hover:scale-[1.02] border border-white/5">
-                <Image src="/25years.webp" alt="25 Years Silver Jubilee Celebration" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div className="relative isolate group cursor-pointer w-full">
+              <div className="rounded-[2rem] overflow-hidden relative bg-[#0a0a0a] shadow-2xl transition-transform duration-700 hover:scale-[1.02] border border-white/5">
+                <Image src="/alumni-banner.jpg" alt="Silver Jubilee Alumni Meet Banner" width={800} height={500} className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
               </div>
             </div>
