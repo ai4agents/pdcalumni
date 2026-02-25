@@ -20,7 +20,7 @@ export default function GalleryPage() {
     try {
         if (fs.existsSync(galleryDir)) {
             const files = fs.readdirSync(galleryDir);
-            images = files.filter(file => /\.(jpg|jpeg|png|webp|gif)$/i.test(file));
+            images = files.filter(file => /\.(jpg|jpeg|png|webp|gif)$/i.test(file)).sort();
         }
     } catch (err) {
         console.error('Error reading gallery directory:', err);

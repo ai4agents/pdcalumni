@@ -21,18 +21,18 @@ export default function GalleryImageGrid({ images }: { images: string[] }) {
         <>
             {images.length > 0 ? (
                 // Masonry using CSS columns
-                <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {images.map((imgName, idx) => (
                         <div
                             key={idx}
-                            className="break-inside-avoid relative rounded-2xl overflow-hidden group border border-white/10 shadow-xl bg-[#050505] cursor-pointer mb-6 transform transition-transform duration-500 hover:-translate-y-1"
+                            className="relative rounded-2xl overflow-hidden group border border-white/10 shadow-xl bg-[#050505] cursor-pointer h-[280px] transform transition-transform duration-500 hover:-translate-y-1"
                             onClick={() => setSelectedImage(imgName)}
                         >
                             <img
                                 src={`/gallery/${imgName}`}
                                 alt={`Gallery view ${idx + 1}`}
                                 loading="lazy"
-                                className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />
 
                             {/* Hover Overlay */}
