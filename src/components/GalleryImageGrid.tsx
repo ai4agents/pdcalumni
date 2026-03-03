@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { X, ZoomIn } from 'lucide-react';
 
-export default function GalleryImageGrid({ images }: { images: string[] }) {
+export default function GalleryImageGrid({ images, basePath = "/gallery/" }: { images: string[], basePath?: string }) {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     // Close modal when Escape key is pressed
@@ -29,7 +29,7 @@ export default function GalleryImageGrid({ images }: { images: string[] }) {
                             onClick={() => setSelectedImage(imgName)}
                         >
                             <img
-                                src={`/gallery/${imgName}`}
+                                src={`${basePath}${encodeURIComponent(imgName)}`}
                                 alt={`Gallery view ${idx + 1}`}
                                 loading="lazy"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -76,7 +76,7 @@ export default function GalleryImageGrid({ images }: { images: string[] }) {
                         onClick={(e) => e.stopPropagation()}
                     >
                         <img
-                            src={`/gallery/${selectedImage}`}
+                            src={selectedImage ? `${basePath}${encodeURIComponent(selectedImage)}` : ""}
                             alt="Full view gallery preview"
                             className="max-h-[85vh] w-auto max-w-full rounded-lg shadow-2xl object-contain border border-white/10"
                         />

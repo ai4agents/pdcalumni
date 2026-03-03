@@ -8,7 +8,8 @@ const achievements = [
     { id: 1, src: "/a1.webp", alt: "Alumni Achievement 1" },
     { id: 2, src: "/a2.webp", alt: "Alumni Achievement 2" },
     { id: 3, src: "/a3.webp", alt: "Alumni Achievement 3" },
-    { id: 4, src: "/a4.webp", alt: "Alumni Achievement 4" }
+    { id: 4, src: "/a4.webp", alt: "Alumni Achievement 4" },
+    { id: 5, src: "/paper.jpeg", alt: "Alumni Achievement 5" }
 ];
 
 export default function AchievementsGallery() {

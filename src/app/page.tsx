@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import { ArrowRight, Play, CalendarDays, Award, BookOpen, Quote, Sparkles, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import JubileeBanner from "@/components/JubileeBanner";
 import StoryBentoSlider from "@/components/StoryBentoSlider";
 
 export default function Home() {
@@ -54,11 +53,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FLOATING JUBILEE BANNER FROM REFERENCE */}
-        <div className="relative z-20 -mt-16 w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-16">
-          <JubileeBanner />
-        </div>
-
         {/* SILVER JUBILEE DETAILS (Sophisticated) */}
         <section className="relative py-32 bg-[#050505] overflow-hidden">
           <div className="absolute inset-0">
@@ -99,7 +93,7 @@ export default function Home() {
 
             <div className="relative isolate group cursor-pointer w-full">
               <div className="rounded-[2rem] overflow-hidden relative bg-[#0a0a0a] shadow-2xl transition-transform duration-700 hover:scale-[1.02] border border-white/5">
-                <Image src="/alumni-banner.jpg" alt="Silver Jubilee Alumni Meet Banner" width={800} height={500} className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105" />
+                <Image src="/25years.webp" alt="Silver Jubilee Alumni Meet Banner" width={800} height={500} className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
               </div>
             </div>
